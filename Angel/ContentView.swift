@@ -14,6 +14,10 @@ struct ContentView: View {
         Text("Hello, World!")
             Text("Hello, World!")
             Text("Hello, World!")
+            
+            Circle()
+            .frame(width: 50, height: 50)
+                .foregroundColor(Color.red)
     }
     }
 }
