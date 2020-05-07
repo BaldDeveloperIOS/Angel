@@ -56,6 +56,8 @@
 		116248A7246429480091ABF5 /* Angel */ = {
 			isa = PBXGroup;
 			children = (
+				4B207F1824642F29007F23BE /* ViewModel */,
+				4B207F1724642F03007F23BE /* Model */,
 				116248A8246429480091ABF5 /* AppDelegate.swift */,
 				116248AA246429480091ABF5 /* SceneDelegate.swift */,
 				116248AC246429480091ABF5 /* ContentView.swift */,
@@ -73,6 +75,20 @@
 				116248B1246429490091ABF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B207F1724642F03007F23BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B207F1824642F29007F23BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
