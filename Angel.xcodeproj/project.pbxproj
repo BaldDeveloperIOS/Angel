@@ -13,6 +13,7 @@
 		116248AF246429490091ABF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116248AE246429490091ABF5 /* Assets.xcassets */; };
 		116248B2246429490091ABF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116248B1246429490091ABF5 /* Preview Assets.xcassets */; };
 		116248B5246429490091ABF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116248B3246429490091ABF5 /* LaunchScreen.storyboard */; };
+		11A339472466E27F00E12CF6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A339462466E27F00E12CF6 /* TabBar.swift */; };
 		4B207F1A24643229007F23BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1924643229007F23BE /* User.swift */; };
 		4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1B24643245007F23BE /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		116248B1246429490091ABF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		116248B4246429490091ABF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116248B6246429490091ABF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A339462466E27F00E12CF6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B207F1924643229007F23BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B207F1B24643245007F23BE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 				116248A8246429480091ABF5 /* AppDelegate.swift */,
 				116248AA246429480091ABF5 /* SceneDelegate.swift */,
 				116248AC246429480091ABF5 /* ContentView.swift */,
+				11A339462466E27F00E12CF6 /* TabBar.swift */,
 				116248AE246429490091ABF5 /* Assets.xcassets */,
 				116248B3246429490091ABF5 /* LaunchScreen.storyboard */,
 				116248B6246429490091ABF5 /* Info.plist */,
@@ -171,6 +174,7 @@
 				4B207F1A24643229007F23BE /* User.swift in Sources */,
 				116248A9246429480091ABF5 /* AppDelegate.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
+				11A339472466E27F00E12CF6 /* TabBar.swift in Sources */,
 				4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */,
 				116248AD246429480091ABF5 /* ContentView.swift in Sources */,
 			);

@@ -10,14 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-        Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
+        
+        ZStack {
             
-            Circle()
-            .frame(width: 50, height: 50)
-                .foregroundColor(Color.red)
+            TabBar()
+            VStack {
+            Text("Hello, World!")
+            Text("Hello, World!")
+            Text("Hello, World!")
+            }
     }
     }
 }
