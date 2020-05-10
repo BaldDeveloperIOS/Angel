@@ -1,96 +1,125 @@
 //
-//  TabBar.swift
+//  TabBarTest.swift
 //  Angel
 //
-//  Created by chauveau on 09/05/2020.
+//  Created by chauveau on 10/05/2020.
 //  Copyright © 2020 chauveau. All rights reserved.
 //
 
 import SwiftUI
 
 struct TabBar: View {
-    @State var selected = 0
-    
+    @State var show = false
     var body: some View {
-        VStack {
+        
+        ZStack (alignment: .bottom){
+            NavigationView{
+                ContentView()
+            }
+            BottomBarTest()
             
-            Spacer()
-            
-            ZStack (alignment: .bottom){
-                BottomBar(selectedItem: self.$selected)
-                .padding()
-                    .padding(.horizontal, 22)
-                    .background(CurvedShape())
+            ZStack{
+                NavigationLink(destination: DetailTab(show: self.$show), isActive: self.$show)
+                {
+                    Text("")
+                }
                 
                 Button(action: {
-                    
+                    self.send()
                 }) {
                     Image("Logo")
                         .renderingMode(.original)
-                    .padding(30)
+                        .padding(30)
                     
                 }.background(Color("ButtonColor"))
                     .clipShape(Circle())
-                .overlay(Circle()
-                    .stroke(Color.white, lineWidth: 5))
-                    .offset(y: -15)
-                .shadow(radius: 15)
+                    .overlay(Circle()
+                        .stroke(Color.white, lineWidth: 5))
+                    .offset(y: 0)
+                    .shadow(radius: 15)
             }
-        }.background(Color("BackgroundColor"))
-    }
-}
-
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
-}
-
-// Structure de la tabBar
-struct CurvedShape: View {
-    var body: some View {
-        Path { path in
-            
-            path.move(to: CGPoint(x: 0, y: 0))
-                path.addLine(to: CGPoint(x: UIScreen.main.bounds.width, y: 0))
-                path.addLine(to: CGPoint(x: UIScreen.main.bounds.width, y: 55))
+        }.onAppear{
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("DetailTab"), object: nil, queue: .main){
+                (_) in
                 
-                
-                
-                path.addLine(to: CGPoint(x: 0, y: 55))
-                
-            }.fill(Color.white)
-            .rotationEffect(.init(degrees: 180))
-            
+                self.show = true
+            }
         }
     }
+    
+    func send(){
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,.badge]){ (_, _) in
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "Alerte"
+        content.body = "Ana Tolie vient d’activer le module d’alerte. Lance l’application pour lui venir en aide"
+        
+        let open = UNNotificationAction(identifier: "open", title: "Open", options: .foreground)
+        let cancel = UNNotificationAction(identifier: "cancel", title: "Cancel", options: .destructive)
+        
+        let categories = UNNotificationCategory(identifier: "action", actions: [open,cancel], intentIdentifiers: [])
+        
+        UNUserNotificationCenter.current().setNotificationCategories([categories])
+        content.categoryIdentifier = "action"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let req = UNNotificationRequest(identifier: "req", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+    
+    struct TabBar_Previews: PreviewProvider {
+        static var previews: some View {
+            TabBar()
+        }
+    }
+}
+
 
 // Eléments de la tabBar
-struct BottomBar : View {
-    @ Binding var selectedItem : Int
-    
+struct BottomBarTest : View {
     var body : some View {
-        HStack {
+        TabView  {
             
-            VStack {
-            Button(action: {
-                self.selectedItem = 0
-            }) {
-                Image(systemName: "person.circle.fill")
-            } .foregroundColor(self.selectedItem == 1 ? .black : Color("PurpleAngel"))
-            .font(.title)
+            Profile()
+                .tabItem  {
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.title)
+                    Text("Profil")
             }
+            ContentView()
+                .tabItem {
+                    Image(systemName: "phone")
+                        .font(.title)
+                    Text("Urgence")
+            }
+            
+            ContentView()
+                .tabItem {
+                    Image(systemName: "map")
+                        .font(.title)
+                    Text("Carte")
+            }
+        }.accentColor(Color("PurpleAngel"))
+    }
+}
 
-            Spacer().frame(width: 280)
-            
-            VStack {
-            Button(action: {
-                self.selectedItem = 1
-            }) {
-                Image(systemName: "map")
-            } .foregroundColor(self.selectedItem == 0 ? .black : Color("PurpleAngel"))
-            .font(.title)
-            }
-        }
+
+struct DetailTab: View {
+    @Binding var show : Bool
+    
+    var body: some View{
+        ContentView()
+            .navigationBarTitle("Ana Tolie Alerte", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                Button (action: {
+                    
+                    self.show = false
+                    
+                }, label: {
+                    Image(systemName: "arrow.left")
+                })
+        )
     }
 }
