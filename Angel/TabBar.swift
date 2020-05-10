@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct TabBar: View {
+    @State var selected = 0
+    
     var body: some View {
         VStack {
             
             Spacer()
             
             ZStack (alignment: .bottom){
-                BottomBar()
+                BottomBar(selectedItem: self.$selected)
                 .padding()
                     .padding(.horizontal, 22)
                     .background(CurvedShape())
@@ -65,15 +67,17 @@ struct CurvedShape: View {
 
 // Eléments de la tabBar
 struct BottomBar : View {
+    @ Binding var selectedItem : Int
+    
     var body : some View {
         HStack {
             
             VStack {
             Button(action: {
-                
+                self.selectedItem = 0
             }) {
                 Image(systemName: "person.circle.fill")
-            } .foregroundColor(Color.black)
+            } .foregroundColor(self.selectedItem == 1 ? .black : Color("PurpleAngel"))
             .font(.title)
             }
 
@@ -81,10 +85,10 @@ struct BottomBar : View {
             
             VStack {
             Button(action: {
-                
+                self.selectedItem = 1
             }) {
                 Image(systemName: "map")
-            } .foregroundColor(Color.black)
+            } .foregroundColor(self.selectedItem == 0 ? .black : Color("PurpleAngel"))
             .font(.title)
             }
         }
