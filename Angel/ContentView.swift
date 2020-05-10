@@ -10,16 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        ZStack {
-            
-            TabBar()
-            VStack {
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
-            }
-    }
+        VStack {
+            Text("Ici c'est la map")
+        }
     }
 }
 
