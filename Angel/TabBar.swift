@@ -16,7 +16,7 @@ struct TabBar: View {
         
         ZStack (alignment: .bottom){
             NavigationView{
-                ContentView()
+              ContentView()
             }
             BottomBar()
             

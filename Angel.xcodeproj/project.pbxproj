@@ -17,6 +17,13 @@
 		11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3394A24682E4800E12CF6 /* TabBar.swift */; };
 		4B207F1A24643229007F23BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1924643229007F23BE /* User.swift */; };
 		4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1B24643245007F23BE /* UserViewModel.swift */; };
+		4B253854246949B100C1F2DA /* ButtonUrgence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25384F246949B100C1F2DA /* ButtonUrgence.swift */; };
+		4B253855246949B100C1F2DA /* ButtonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B253850246949B100C1F2DA /* ButtonAlert.swift */; };
+		4B253856246949B100C1F2DA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B253851246949B100C1F2DA /* Color.swift */; };
+		4B253857246949B100C1F2DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B253852246949B100C1F2DA /* AlertView.swift */; };
+		4B253858246949B100C1F2DA /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B253853246949B100C1F2DA /* ButtonTest.swift */; };
+		4B25385B24694A5600C1F2DA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25385924694A5600C1F2DA /* TestView.swift */; };
+		4B25385C24694A5600C1F2DA /* UrgenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25385A24694A5600C1F2DA /* UrgenceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		11A3394A24682E4800E12CF6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B207F1924643229007F23BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B207F1B24643245007F23BE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4B25384F246949B100C1F2DA /* ButtonUrgence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonUrgence.swift; path = "../../../../../Desktop/dossier sans titre/ButtonUrgence.swift"; sourceTree = "<group>"; };
+		4B253850246949B100C1F2DA /* ButtonAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonAlert.swift; path = "../../../../../Desktop/dossier sans titre/ButtonAlert.swift"; sourceTree = "<group>"; };
+		4B253851246949B100C1F2DA /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "../../../../../Desktop/dossier sans titre/Color.swift"; sourceTree = "<group>"; };
+		4B253852246949B100C1F2DA /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = "../../../../../Desktop/dossier sans titre/AlertView.swift"; sourceTree = "<group>"; };
+		4B253853246949B100C1F2DA /* ButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonTest.swift; path = "../../../../../Desktop/dossier sans titre/ButtonTest.swift"; sourceTree = "<group>"; };
+		4B25385924694A5600C1F2DA /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestView.swift; path = "../../../../../Desktop/dossier sans titre/TestView.swift"; sourceTree = "<group>"; };
+		4B25385A24694A5600C1F2DA /* UrgenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrgenceView.swift; path = "../../../../../Desktop/dossier sans titre/UrgenceView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,13 @@
 				116248AA246429480091ABF5 /* SceneDelegate.swift */,
 				116248AC246429480091ABF5 /* ContentView.swift */,
 				11A3394A24682E4800E12CF6 /* TabBar.swift */,
+				4B253850246949B100C1F2DA /* ButtonAlert.swift */,
+				4B253853246949B100C1F2DA /* ButtonTest.swift */,
+				4B25384F246949B100C1F2DA /* ButtonUrgence.swift */,
+				4B253852246949B100C1F2DA /* AlertView.swift */,
+				4B25385924694A5600C1F2DA /* TestView.swift */,
+				4B25385A24694A5600C1F2DA /* UrgenceView.swift */,
+				4B253851246949B100C1F2DA /* Color.swift */,
 				11A339482468157A00E12CF6 /* Profile.swift */,
 				116248AE246429490091ABF5 /* Assets.xcassets */,
 				116248B3246429490091ABF5 /* LaunchScreen.storyboard */,
@@ -176,10 +197,17 @@
 			files = (
 				4B207F1A24643229007F23BE /* User.swift in Sources */,
 				116248A9246429480091ABF5 /* AppDelegate.swift in Sources */,
+				4B253855246949B100C1F2DA /* ButtonAlert.swift in Sources */,
+				4B253858246949B100C1F2DA /* ButtonTest.swift in Sources */,
+				4B253857246949B100C1F2DA /* AlertView.swift in Sources */,
+				4B253856246949B100C1F2DA /* Color.swift in Sources */,
+				4B25385C24694A5600C1F2DA /* UrgenceView.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
+				4B253854246949B100C1F2DA /* ButtonUrgence.swift in Sources */,
 				11A339492468157A00E12CF6 /* Profile.swift in Sources */,
 				4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */,
 				116248AD246429480091ABF5 /* ContentView.swift in Sources */,
+				4B25385B24694A5600C1F2DA /* TestView.swift in Sources */,
 				11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
