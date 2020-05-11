@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Ici c'est la map")
+            Text("Ici c'est pour tester")
         }
     }
 }
