@@ -94,7 +94,7 @@ struct BottomBar : View {
             
             ContentView()
                 .tabItem {
-                    Image(systemName: "")
+                    Text("")
             }
             
             ContentView()
