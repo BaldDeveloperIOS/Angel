@@ -10,13 +10,15 @@ import SwiftUI
 
 struct TabBar: View {
     @State var show = false
+    @State var shouldHide = false
+    
     var body: some View {
         
         ZStack (alignment: .bottom){
             NavigationView{
                 ContentView()
             }
-            BottomBarTest()
+            BottomBar()
             
             ZStack{
                 NavigationLink(destination: DetailTab(show: self.$show), isActive: self.$show)
@@ -25,6 +27,7 @@ struct TabBar: View {
                 }
                 
                 Button(action: {
+                    self.shouldHide = true
                     self.send()
                 }) {
                     Image("Logo")
@@ -37,6 +40,7 @@ struct TabBar: View {
                         .stroke(Color.white, lineWidth: 5))
                     .offset(y: 0)
                     .shadow(radius: 15)
+                    .opacity(shouldHide ? 0:1)
             }
         }.onAppear{
             NotificationCenter.default.addObserver(forName: NSNotification.Name("DetailTab"), object: nil, queue: .main){
@@ -75,9 +79,9 @@ struct TabBar: View {
     }
 }
 
-
 // Eléments de la tabBar
-struct BottomBarTest : View {
+struct BottomBar : View {
+    
     var body : some View {
         TabView  {
             
@@ -87,11 +91,10 @@ struct BottomBarTest : View {
                         .font(.title)
                     Text("Profil")
             }
+            
             ContentView()
                 .tabItem {
-                    Image(systemName: "phone")
-                        .font(.title)
-                    Text("Urgence")
+                    Image(systemName: "")
             }
             
             ContentView()

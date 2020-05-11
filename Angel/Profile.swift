@@ -10,7 +10,11 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
+        HStack {
         Text("Ici c'est le profil")
+        Image(systemName: "heart.fill")
+            .foregroundColor(Color.pink)
+    }
     }
 }
 
