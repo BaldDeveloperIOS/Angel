@@ -14,51 +14,78 @@ struct ContentView: View {
     @State var Email:String=""
     @State var passWord: String=""
     @State var confirmPassWord: String=""
-    @State var AddContacts: String=""
+    @State var addContacts: String=""
+
     var body: some View {
         
         VStack{
-        Text("Mon profil")
-            .font(.largeTitle)
-            .fontWeight(.semibold)
-            .foregroundColor(.blue)
-            .padding(.bottom,20)
+            ExtractedView()
         TextField("username",text:$username)
             .padding()
             .background(lightGreyColor)
-            .cornerRadius(5.0)
+            .cornerRadius(35.0)
             .padding(.bottom,20)
             
         TextField("Fastname",text:$userFastname)
             .padding()
             .background(lightGreyColor)
-            .cornerRadius(5.0)
+            .cornerRadius(35.0)
             .padding(.bottom,20)
         TextField("Email",text:$Email)
             .padding()
             .background(lightGreyColor)
-            .cornerRadius(5.0)
+            .cornerRadius(35.0)
             .padding(.bottom,20)
         TextField("passWord",text:$passWord)
             .padding()
             .background(lightGreyColor)
-            .cornerRadius(5.0)
+            .cornerRadius(35.0)
             .padding(.bottom,20)
         TextField("confirmPassWord",text:$confirmPassWord)
             .padding()
             .background(lightGreyColor)
-            .cornerRadius(5.0)
+            .cornerRadius(35.0)
             .padding(.bottom,20)
-        TextField("AddContacts",text:$AddContacts)
-            .padding()
-            .background(lightGreyColor)
-            .cornerRadius(5.0)
-            .padding(.bottom,20)
+            Text("Valider")
+                .font(.headline)
+                .foregroundColor(.black)
+                .padding()
+                .frame(width:150, height:40)
+                .background(Color.blue)
+                .cornerRadius(15.0)
+                .padding(.bottom,20)
+            Text("Valider")
+                .font(.headline)
+                .foregroundColor(.black)
+                .padding()
+                .frame(width:150,height:40)
+                .background(Color.blue)
+                .cornerRadius(15.0)
+                .padding(.bottom,20)
+        Text("addContacts")
+            
+                .font(.headline)
+                .foregroundColor(.black)
+                .padding()
+                .frame(width:350, height:40)
+                .background(Color.blue)
+                .cornerRadius(35.0)
+                .padding(.bottom,20)
+            
+            
+            Text("Valider")
+                .font(.headline)
+                .foregroundColor(.black)
+                .padding()
+                .frame(width: 350, height: 40)
+                .background(Color.blue)
+                .cornerRadius(35.0)
+            
 
             
         
         }
-        
+    .padding()
 }
     
 
@@ -67,4 +94,14 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        Text("Mon profil")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .foregroundColor(.blue)
+            .padding(.bottom,20)
+    }
 }
