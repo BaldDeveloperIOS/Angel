@@ -14,7 +14,7 @@ struct AlertButton: View {
     var body: some View {
         
         Button(action: {
-            self.shouldHide = true
+           // self.shouldHide = true
         }) {
             Image("Logo")
                 .renderingMode(.original)
