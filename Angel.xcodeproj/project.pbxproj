@@ -17,6 +17,10 @@
 		117A6D29246955A90004B2FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D28246955A90004B2FE /* Notifications.swift */; };
 		117A6D2B246978210004B2FE /* TabBarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D2A246978210004B2FE /* TabBarTest.swift */; };
 		117A6D2D24697AA60004B2FE /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D2C24697AA60004B2FE /* Map.swift */; };
+		117A6D2F2469879D0004B2FE /* EmergencyNumbersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D2E2469879D0004B2FE /* EmergencyNumbersProfile.swift */; };
+		117A6D31246988190004B2FE /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D30246988190004B2FE /* UserProfile.swift */; };
+		117A6D33246988420004B2FE /* KeeperProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D32246988420004B2FE /* KeeperProfile.swift */; };
+		117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D34246988640004B2FE /* BraceletProfile.swift */; };
 		11A339492468157A00E12CF6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A339482468157A00E12CF6 /* Profile.swift */; };
 		11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3394A24682E4800E12CF6 /* TabBar.swift */; };
 		4B207F1A24643229007F23BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1924643229007F23BE /* User.swift */; };
@@ -36,6 +40,10 @@
 		117A6D28246955A90004B2FE /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		117A6D2A246978210004B2FE /* TabBarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTest.swift; sourceTree = "<group>"; };
 		117A6D2C24697AA60004B2FE /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		117A6D2E2469879D0004B2FE /* EmergencyNumbersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyNumbersProfile.swift; sourceTree = "<group>"; };
+		117A6D30246988190004B2FE /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		117A6D32246988420004B2FE /* KeeperProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperProfile.swift; sourceTree = "<group>"; };
+		117A6D34246988640004B2FE /* BraceletProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraceletProfile.swift; sourceTree = "<group>"; };
 		11A339482468157A00E12CF6 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		11A3394A24682E4800E12CF6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B207F1924643229007F23BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				11A3394A24682E4800E12CF6 /* TabBar.swift */,
 				117A6D2A246978210004B2FE /* TabBarTest.swift */,
 				11A339482468157A00E12CF6 /* Profile.swift */,
+				117A6D2E2469879D0004B2FE /* EmergencyNumbersProfile.swift */,
+				117A6D30246988190004B2FE /* UserProfile.swift */,
+				117A6D32246988420004B2FE /* KeeperProfile.swift */,
+				117A6D34246988640004B2FE /* BraceletProfile.swift */,
 				116248AE246429490091ABF5 /* Assets.xcassets */,
 				116248B3246429490091ABF5 /* LaunchScreen.storyboard */,
 				116248B6246429490091ABF5 /* Info.plist */,
@@ -186,17 +198,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117A6D2F2469879D0004B2FE /* EmergencyNumbersProfile.swift in Sources */,
 				117A6D2724694E970004B2FE /* AlertButton.swift in Sources */,
 				4B207F1A24643229007F23BE /* User.swift in Sources */,
 				116248A9246429480091ABF5 /* AppDelegate.swift in Sources */,
 				117A6D29246955A90004B2FE /* Notifications.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
 				11A339492468157A00E12CF6 /* Profile.swift in Sources */,
+				117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */,
 				4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */,
 				117A6D2D24697AA60004B2FE /* Map.swift in Sources */,
+				117A6D33246988420004B2FE /* KeeperProfile.swift in Sources */,
 				117A6D2B246978210004B2FE /* TabBarTest.swift in Sources */,
 				116248AD246429480091ABF5 /* ContentView.swift in Sources */,
 				11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */,
+				117A6D31246988190004B2FE /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
