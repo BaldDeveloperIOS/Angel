@@ -10,7 +10,38 @@ import SwiftUI
 
 struct BraceletProfile: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+        
+        Rectangle()
+        .foregroundColor(.clear)
+        .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+        .cornerRadius(25)
+        .frame(width: 380, height: 160)
+        .opacity(0.8)
+        .shadow(color: .gray, radius: 5, x: 10, y: 10)
+            
+            HStack {
+                VStack (alignment: .leading){
+                Text("Connecter mon")
+                Text("bracelet d'alerte")
+                Text("à l'application")
+                }.font(.system(size: 23))
+                
+                Spacer().frame(width: 40)
+                
+                ZStack (alignment: .center){
+                Circle()
+                .shadow(color: .gray, radius: 5, x: 3, y: 3)
+                .foregroundColor(Color.pink)
+                .frame(width: 90, height: 90)
+                .overlay(
+                    Circle()
+                        .stroke(Color.white, lineWidth: 4)
+                )
+                Image("bluetooth")
+                }
+            }
+        }
     }
 }
 
