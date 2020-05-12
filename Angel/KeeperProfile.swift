@@ -25,47 +25,81 @@ struct KeeperProfile: View {
                 VStack  (alignment: .leading){
                     Text("Mes gardiens")
                         .font(.title)
-                    Spacer().frame(height: 0)
+                        .padding(.bottom, 2)
+                    
+                    
                     // Stack photos Keepers
                     HStack {
-                        Image("KeeperOne").resizable()
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du gardien 1 !")
+                        }) {
+                            Image("KeeperOne").renderingMode(.original)
+                            .resizable()
                             .frame(width: 90, height: 90)
                             .clipShape(Circle())
                             .padding(.trailing, 10)
-                        Image("KeeperTwo").resizable()
+                                
+                        }
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du gardien 2 !")
+                        }) {
+                            Image("KeeperTwo").renderingMode(.original)
+                            .resizable()
                             .frame(width: 90, height: 90)
                             .clipShape(Circle())
                             .padding(.trailing, 10)
-                        Image("KeeperThree").resizable()
+                        }
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du gardien 3 !")
+                        }) {
+                            Image("KeeperThree").renderingMode(.original)
+                            .resizable()
                             .frame(width: 90, height: 90)
                             .clipShape(Circle())
-                    }.padding()
+                        }
+                    }
                 }
-                Spacer().frame(height: 0)
+
                 // Stack Protégés
                 VStack  (alignment: .leading){
                     Text("Mes protégés")
                         .font(.title)
-                    Spacer().frame(height: 0)
+                      .padding(.bottom, 2)
+                    
                     // Stack photos Protégés
                     HStack {
-                        Image("protégéOne").resizable()
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du protégé 1 !")
+                        }) {
+                            Image("protégéOne").renderingMode(.original)
+                            .resizable()
                             .frame(width: 90, height: 90)
                             .clipShape(Circle())
                             .padding(.trailing, 10)
-                        Image("protégéTwo").resizable()
+                        }
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du protégé 2 !")
+                        }) {
+                            Image("protégéTwo").renderingMode(.original)
+                            .resizable()
                             .frame(width: 90, height: 90)
                             .clipShape(Circle())
                             .padding(.trailing, 10)
-                        ZStack {
-                        Circle()
-                            .foregroundColor(.gray)
-                            .frame(width: 90, height: 90)
-                        Image(systemName: "plus")
+                        }
+                        Button(action: {
+                            print("GG tu appuies sur le bouton du protégé 3 !")
+                        }) {
+                            ZStack {
+                                 Circle()
+                                     .foregroundColor(.gray)
+                                     .frame(width: 90, height: 90)
+                            Image(systemName: "plus")
                             .font(.title)
                             .foregroundColor(.white)
                         }
-                    }.padding()
+                    }
+                    }
+
                 }
             }
         }
@@ -78,3 +112,37 @@ struct KeeperProfile_Previews: PreviewProvider {
         KeeperProfile()
     }
 }
+
+/* HStack {
+    Image("KeeperOne").resizable()
+        .frame(width: 90, height: 90)
+        .clipShape(Circle())
+        .padding(.trailing, 10)
+    Image("KeeperTwo").resizable()
+        .frame(width: 90, height: 90)
+        .clipShape(Circle())
+        .padding(.trailing, 10)
+    Image("KeeperThree").resizable()
+        .frame(width: 90, height: 90)
+        .clipShape(Circle())
+}.padding() */
+
+/*  HStack {
+      Image("protégéOne").resizable()
+          .frame(width: 90, height: 90)
+          .clipShape(Circle())
+          .padding(.trailing, 10)
+      Image("protégéTwo").resizable()
+          .frame(width: 90, height: 90)
+          .clipShape(Circle())
+          .padding(.trailing, 10)
+      ZStack {
+      Circle()
+          .foregroundColor(.gray)
+          .frame(width: 90, height: 90)
+      Image(systemName: "plus")
+          .font(.title)
+          .foregroundColor(.white)
+      }
+  }.padding()
+  */
