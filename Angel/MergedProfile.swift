@@ -16,7 +16,6 @@ struct MergedProfile: View {
                 UserProfile()
                 KeeperProfile()
                 BraceletProfile()
-                
                 ProfileButtons()
             }
         }
