@@ -85,7 +85,7 @@ struct BottomBar : View {
     var body : some View {
         TabView  {
             
-            Profile()
+            MergedProfile()
                 .tabItem  {
                     Image(systemName: "person.crop.circle.fill")
                         .font(.title)

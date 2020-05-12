@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114AC10F246AA299006AE2EF /* MergedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AC10E246AA299006AE2EF /* MergedProfile.swift */; };
 		116248A9246429480091ABF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248A8246429480091ABF5 /* AppDelegate.swift */; };
 		116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248AA246429480091ABF5 /* SceneDelegate.swift */; };
 		116248AD246429480091ABF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248AC246429480091ABF5 /* ContentView.swift */; };
@@ -23,13 +24,13 @@
 		117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D34246988640004B2FE /* BraceletProfile.swift */; };
 		117A6D392469967A0004B2FE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D382469967A0004B2FE /* Color.swift */; };
 		117A6D3B246A9A6D0004B2FE /* ProfileButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D3A246A9A6D0004B2FE /* ProfileButtons.swift */; };
-		11A339492468157A00E12CF6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A339482468157A00E12CF6 /* Profile.swift */; };
 		11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3394A24682E4800E12CF6 /* TabBar.swift */; };
 		4B207F1A24643229007F23BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1924643229007F23BE /* User.swift */; };
 		4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1B24643245007F23BE /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114AC10E246AA299006AE2EF /* MergedProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedProfile.swift; sourceTree = "<group>"; };
 		116248A5246429480091ABF5 /* Angel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116248A8246429480091ABF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116248AA246429480091ABF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		117A6D34246988640004B2FE /* BraceletProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraceletProfile.swift; sourceTree = "<group>"; };
 		117A6D382469967A0004B2FE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		117A6D3A246A9A6D0004B2FE /* ProfileButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtons.swift; sourceTree = "<group>"; };
-		11A339482468157A00E12CF6 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		11A3394A24682E4800E12CF6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B207F1924643229007F23BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B207F1B24643245007F23BE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				117A6D2C24697AA60004B2FE /* Map.swift */,
 				11A3394A24682E4800E12CF6 /* TabBar.swift */,
 				117A6D2A246978210004B2FE /* TabBarTest.swift */,
-				11A339482468157A00E12CF6 /* Profile.swift */,
+				114AC10E246AA299006AE2EF /* MergedProfile.swift */,
 				117A6D2E2469879D0004B2FE /* EmergencyNumbersProfile.swift */,
 				117A6D30246988190004B2FE /* UserProfile.swift */,
 				117A6D32246988420004B2FE /* KeeperProfile.swift */,
@@ -212,8 +212,8 @@
 				117A6D29246955A90004B2FE /* Notifications.swift in Sources */,
 				117A6D392469967A0004B2FE /* Color.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
-				11A339492468157A00E12CF6 /* Profile.swift in Sources */,
 				117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */,
+				114AC10F246AA299006AE2EF /* MergedProfile.swift in Sources */,
 				4B207F1C24643245007F23BE /* UserViewModel.swift in Sources */,
 				117A6D2D24697AA60004B2FE /* Map.swift in Sources */,
 				117A6D33246988420004B2FE /* KeeperProfile.swift in Sources */,

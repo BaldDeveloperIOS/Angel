@@ -10,7 +10,69 @@ import SwiftUI
 
 struct ProfileButtons: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            HStack {
+            Button(action: {
+                print("GG!!!!!!!")
+            }) {
+                Text("Inviter des amis")
+            }
+            .padding()
+            .frame(width: 380)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .foregroundColor(.white)
+            .font(.title)
+            .cornerRadius(50)
+            }.padding([.top, .leading, .trailing], 20.0)
+                .padding(.bottom,10)
+                
+            
+            HStack {
+            Button(action: {
+                print("GG!!!!!!!")
+            }) {
+                Text("Historique des alertes")
+            }
+            .padding()
+            .frame(width: 380)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .foregroundColor(.white)
+            .font(.title)
+            .cornerRadius(50)
+            }.padding([.leading, .trailing], 20.0)
+                .padding(.bottom,10)
+            HStack {
+            Button(action: {
+                print("GG!!!!!!!")
+            }) {
+                Text("Guide d'utilisation")
+            }
+            .padding()
+            .frame(width: 380)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .foregroundColor(.white)
+            .font(.title)
+            .cornerRadius(50)
+            }.padding([.leading, .trailing], 20.0)
+                .padding(.bottom,10)
+            
+            HStack {
+            Button(action: {
+                print("GG!!!!!!!")
+            }) {
+                Text("Paramètres de l'application")
+            }
+            .padding()
+            .frame(width: 380)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .foregroundColor(.white)
+            .font(.title)
+            .cornerRadius(50)
+            }.padding([.leading, .trailing], 20.0)
+            .padding(.bottom,10)
+            
+        }
     }
 }
 
