@@ -15,76 +15,62 @@ struct ContentView: View {
     @State var passWord: String=""
     @State var confirmPassWord: String=""
     @State var addContacts: String=""
-
+    @State var addPhoto=true
+    @State var addScreenShot=true
     var body: some View {
         
         VStack{
             ExtractedView()
-        TextField("username",text:$username)
+        TextField("Nom",text:$username)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(35.0)
             .padding(.bottom,20)
             
-        TextField("Fastname",text:$userFastname)
+        TextField("Prénom",text:$userFastname)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(35.0)
             .padding(.bottom,20)
-        TextField("Email",text:$Email)
+        TextField("E_mail",text:$Email)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(35.0)
             .padding(.bottom,20)
-        TextField("passWord",text:$passWord)
+        TextField("Mot de passe",text:$passWord)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(35.0)
             .padding(.bottom,20)
-        TextField("confirmPassWord",text:$confirmPassWord)
+        TextField("confirmer mon mot de passe",text:$confirmPassWord)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(35.0)
             .padding(.bottom,20)
-            Text("Valider")
-                .font(.headline)
-                .foregroundColor(.black)
-                .padding()
-                .frame(width:150, height:40)
-                .background(Color.blue)
-                .cornerRadius(15.0)
-                .padding(.bottom,20)
-            Text("Valider")
-                .font(.headline)
-                .foregroundColor(.black)
-                .padding()
-                .frame(width:150,height:40)
-                .background(Color.blue)
-                .cornerRadius(15.0)
-                .padding(.bottom,20)
-        Text("addContacts")
+                Toggle("Ajouter une photo",isOn: $addPhoto).padding()
+                Toggle("Ajouter screenshot",isOn: $addScreenShot).padding()
             
-                .font(.headline)
-                .foregroundColor(.black)
-                .padding()
-                .frame(width:350, height:40)
-                .background(Color.blue)
-                .cornerRadius(35.0)
-                .padding(.bottom,20)
-            
-            
-            Text("Valider")
+             Button(action:{print("Button taper")})
+             {
+                Text("AJOUTER MES CONTACTS")
+                    .font(.headline)
+                    .foregroundColor(.black)
+                    .padding()
+                    .frame(width:350, height:40)
+                    .background(Color.blue)
+                    .cornerRadius(35.0)
+            }.padding()
+            Button(action:{print("Button taper")})
+            {
+            Text("VALIDER")
                 .font(.headline)
                 .foregroundColor(.black)
                 .padding()
                 .frame(width: 350, height: 40)
                 .background(Color.blue)
                 .cornerRadius(35.0)
-            
-
-            
-        
         }
+    }
     .padding()
 }
     
