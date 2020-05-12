@@ -21,6 +21,7 @@
 		117A6D31246988190004B2FE /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D30246988190004B2FE /* UserProfile.swift */; };
 		117A6D33246988420004B2FE /* KeeperProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D32246988420004B2FE /* KeeperProfile.swift */; };
 		117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D34246988640004B2FE /* BraceletProfile.swift */; };
+		117A6D392469967A0004B2FE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A6D382469967A0004B2FE /* Color.swift */; };
 		11A339492468157A00E12CF6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A339482468157A00E12CF6 /* Profile.swift */; };
 		11A3394B24682E4800E12CF6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3394A24682E4800E12CF6 /* TabBar.swift */; };
 		4B207F1A24643229007F23BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B207F1924643229007F23BE /* User.swift */; };
@@ -44,6 +45,7 @@
 		117A6D30246988190004B2FE /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		117A6D32246988420004B2FE /* KeeperProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperProfile.swift; sourceTree = "<group>"; };
 		117A6D34246988640004B2FE /* BraceletProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraceletProfile.swift; sourceTree = "<group>"; };
+		117A6D382469967A0004B2FE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		11A339482468157A00E12CF6 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		11A3394A24682E4800E12CF6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B207F1924643229007F23BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				4B207F1724642F03007F23BE /* Model */,
 				116248AA246429480091ABF5 /* SceneDelegate.swift */,
 				116248A8246429480091ABF5 /* AppDelegate.swift */,
+				117A6D382469967A0004B2FE /* Color.swift */,
 				117A6D2624694E970004B2FE /* AlertButton.swift */,
 				117A6D28246955A90004B2FE /* Notifications.swift */,
 				116248AC246429480091ABF5 /* ContentView.swift */,
@@ -203,6 +206,7 @@
 				4B207F1A24643229007F23BE /* User.swift in Sources */,
 				116248A9246429480091ABF5 /* AppDelegate.swift in Sources */,
 				117A6D29246955A90004B2FE /* Notifications.swift in Sources */,
+				117A6D392469967A0004B2FE /* Color.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
 				11A339492468157A00E12CF6 /* Profile.swift in Sources */,
 				117A6D35246988640004B2FE /* BraceletProfile.swift in Sources */,

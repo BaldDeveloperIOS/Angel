@@ -12,10 +12,14 @@ struct Profile: View {
     var body: some View {
         
         VStack {
-            Text("Hello")
             
+            EmergencyNumbersProfile()
+            UserProfile()
+            KeeperProfile()
+            BraceletProfile()
+            
+        }
     }
-}
 }
 
 struct Profile_Previews: PreviewProvider {

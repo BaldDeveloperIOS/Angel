@@ -10,11 +10,16 @@ import SwiftUI
 
 struct UserProfile: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-        .background(LinearGradient(gradient: Gradient(colors: [.white, .purple]), startPoint: .top, endPoint: .bottom))
-        .frame(width: 380, height: 160)
-        .opacity(0.4)
-        .shadow(color: .gray, radius: 5, x: 10, y: 10)
+        
+        Rectangle()
+            .foregroundColor(.clear)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .cornerRadius(25)
+            .frame(width: 380, height: 160)
+            .opacity(0.8)
+            .shadow(color: .gray, radius: 5, x: 10, y: 10)
+        
+        
     }
 }
 
