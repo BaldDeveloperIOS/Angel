@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
+
         NavigationView{
         VStack{
         HStack {
@@ -39,6 +40,7 @@ struct Profile: View {
             }
             }
     }
+
     }
 }
 

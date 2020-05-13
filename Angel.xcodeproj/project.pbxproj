@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE3884F24694907001EF9B5 /* Inscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3884E24694907001EF9B5 /* Inscription.swift */; };
+		0FE3885324697CBD001EF9B5 /* Connexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3885224697CBD001EF9B5 /* Connexion.swift */; };
 		116248A9246429480091ABF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248A8246429480091ABF5 /* AppDelegate.swift */; };
 		116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248AA246429480091ABF5 /* SceneDelegate.swift */; };
 		116248AD246429480091ABF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116248AC246429480091ABF5 /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FE3884E24694907001EF9B5 /* Inscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inscription.swift; sourceTree = "<group>"; };
+		0FE3885224697CBD001EF9B5 /* Connexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connexion.swift; sourceTree = "<group>"; };
 		116248A5246429480091ABF5 /* Angel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116248A8246429480091ABF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116248AA246429480091ABF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
