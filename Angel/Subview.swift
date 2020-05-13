@@ -14,7 +14,7 @@ struct Subview: View {
     var body: some View {
         VStack {
            Image(imageString).resizable()
-           .frame(width: 150, height: 150)
+           .frame(width: 250, height: 250)
             
             
             
