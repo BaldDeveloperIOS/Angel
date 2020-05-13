@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TabBar: View {
     @State var show = false
+    @State var shouldHide = false
 
     var body: some View {
         
