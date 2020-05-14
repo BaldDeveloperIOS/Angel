@@ -16,9 +16,42 @@ struct OnBoardingView: View {
         UIHostingController(rootView: Subview(imageString: "pictoThree"))
     ]
     
+    @State var currentPageIndex = 0
+    var titles = [ "Ton ange gardien digital", "Etape 1", "Etape 2", "Etape 3"]
+    var texts = ["Ceci est le texte 1", "Ceci est le texte 2", "Ceci est le texte 3", "Ceci est le texte 4",]
+    
     var body: some View {
-        PageViewController(viewControllers: subviews)
-            .frame(height: 300)
+        
+        VStack {
+            PageViewController(viewControllers: subviews, currentPageIndex: $currentPageIndex)
+                .frame(height: 300)
+            Text(titles[currentPageIndex])
+                .font(.title)
+            Text(texts[currentPageIndex])
+            .font(.subheadline)
+            Button(action: {
+                if self.currentPageIndex + 1 == self.subviews.count {
+                    self.currentPageIndex = 0
+                } else {
+                    self.currentPageIndex += 1
+                }
+            }) {
+                ButtonContent()
+            }
+            PageControl(numberOfPages: subviews.count, currentPageIndex: $currentPageIndex)
+        }
+    }
+}
+
+struct ButtonContent: View {
+    var body: some View {
+        Image(systemName:"arrow.right")
+            .padding()
+            .frame(width: 60, height: 60)
+            .background(LinearGradient(gradient:  Gradient(colors: [.white, Color("PurpleAngel")]), startPoint: .top, endPoint: .bottom))
+            .foregroundColor(.white)
+            .font(.largeTitle)
+            .cornerRadius(10)
     }
 }
 

@@ -13,6 +13,7 @@ import SwiftUI
 struct PageViewController: UIViewControllerRepresentable {
     
     var viewControllers: [UIViewController]
+    @Binding var currentPageIndex: Int
     
     func makeCoordinator() -> Coordinator {
          Coordinator(self)
@@ -24,16 +25,17 @@ struct PageViewController: UIViewControllerRepresentable {
             navigationOrientation: .horizontal)
         
         pageViewController.dataSource = context.coordinator
+        pageViewController.delegate = context.coordinator
         
         return pageViewController
     }
     
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
-            [viewControllers[0]], direction: .forward, animated: true)
+            [viewControllers[currentPageIndex]], direction: .forward, animated: true)
     }
     
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         
         var parent: PageViewController
         
@@ -69,7 +71,17 @@ struct PageViewController: UIViewControllerRepresentable {
             //show the view controller after the currently displayed view controller
             return parent.viewControllers[index + 1]
         }
+        
+        func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+            if completed,
+            let visibleViewController = pageViewController.viewControllers?.first,
+            let index = parent.viewControllers.firstIndex(of: visibleViewController)
+        {
+            parent.currentPageIndex = index
+            }
+        }
     }
         
-}
+    }
+    
 
