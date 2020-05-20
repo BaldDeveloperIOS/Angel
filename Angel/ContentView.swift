@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-let lightGreyColor=Color(red:239/255,green:243/255,blue:244/255,opacity: 1.0)
+
 extension Color{ static let PulpeAngel = Color(red:88/255,green:86/255,blue:214/255)}
 struct ContentView: View {
     @State var username: String=""
@@ -17,94 +17,112 @@ struct ContentView: View {
     @State var confirmPassWord: String=""
     @State var addContacts: String=""
     @State var addPhoto=true
-    @State var addScreenShot=true
+    @State var activateDarkColor=false
     var body: some View {
         
         VStack{
+
             ExtractedView()
         TextField("Nom",text:$username)
             .padding()
-            .background(lightGreyColor)
-            .cornerRadius(35.0)
+            .frame(width:350, height: 40)
+            .background(Color.white)
+            .overlay(RoundedRectangle(cornerRadius:10).stroke(Color.PulpeAngel,lineWidth:2)
+                .foregroundColor(.clear))
             .padding(.bottom,20)
             
         TextField("Prénom",text:$userFastname)
             .padding()
-            .background(lightGreyColor)
-            .cornerRadius(35.0)
+            .frame(width:350, height: 40)
+            .background(Color.white)
+            .overlay(RoundedRectangle(cornerRadius:10).stroke(Color.PulpeAngel,lineWidth:2)
+                .foregroundColor(.clear))
             .padding(.bottom,20)
         TextField("E_mail",text:$Email)
             .padding()
-            .background(lightGreyColor)
-            .cornerRadius(35.0)
+            .frame(width:350, height: 40)
+            .background(Color.white)
+            .overlay(RoundedRectangle(cornerRadius:10).stroke(Color.PulpeAngel,lineWidth:2)
+                .foregroundColor(.clear))
             .padding(.bottom,20)
         TextField("Mot de passe",text:$passWord)
             .padding()
-            .background(lightGreyColor)
-            .cornerRadius(35.0)
+            .frame(width:350, height: 40)
+            .background(Color.white)
+            .overlay(RoundedRectangle(cornerRadius:10).stroke(Color.PulpeAngel,lineWidth:2)
+                .foregroundColor(.clear))
             .padding(.bottom,20)
         TextField("confirmer mon mot de passe",text:$confirmPassWord)
             .padding()
-            .background(lightGreyColor)
-            .cornerRadius(35.0)
+            .frame(width:350, height: 40)
+            .background(Color.white)
+            .overlay(RoundedRectangle(cornerRadius:10).stroke(Color.PulpeAngel,lineWidth:2)
+                .foregroundColor(.clear))
             .padding(.bottom,20)
             HStack{
-        Text("Ajouter une photo")
-                .font(.headline)
-                .foregroundColor(.black)
-                .padding()
-                    Button(action:{print("Button taper")})
+       Text("Ajouter une photo")
+            .font(.headline)
+            .fontWeight(.light)
+            .foregroundColor(.PulpeAngel)
+            
+        .frame(width:160)
+                Button(action:{print("VALIDER")})
                                 {
-                                   Text("")
-                                       .font(.headline)
-                                       .foregroundColor(.black)
-                                       .padding()
-                                       .frame(width:150, height:40)
-                                       .background(Color.PulpeAngel)
-                                       .cornerRadius(35.0)
-                               }.padding()
-        
-            }
+                                    Text("Ajouter ")
+                                        .font(.headline)
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                    }
+                        .padding()
+                        .frame(width:140, height: 40)
+                        .background(LinearGradient(gradient:Gradient(colors:[.white,Color("PulpeAngel")]),startPoint:.top,endPoint: .bottom))
+                        .font(.title)
+                        .foregroundColor(.white)
+
+                        .cornerRadius(10)
+            }.padding(.bottom,10)
+             
+            
             HStack{
-                   Text("Ajouter screenshot")
+                
+                   Text("Activer le mode sombre")
                            .font(.headline)
-                           .foregroundColor(.black)
+                    .fontWeight(.light)
+                           .foregroundColor(.PulpeAngel)
                            .padding()
-                               Button(action:{print("Button taper")})
-                                           {
-                                              Text("")
-                                                  .font(.headline)
-                                                  .foregroundColor(.black)
-                                                  .padding()
-                                                  .frame(width:150, height:40)
-                                                  .background(Color.PulpeAngel)
-                                                  .cornerRadius(35.0)
-                                          }.padding()
-                   
-                       }
-          
+                .frame(width:250, height:40)
+                Toggle("",isOn: $activateDarkColor)
+                 .frame(width:80, height:40)
+                               
+                    }.padding()
+       
              Button(action:{print("Button taper")})
              {
                 Text("AJOUTER MES CONTACTS")
-                    .font(.headline)
-                    .foregroundColor(.black)
+                .font(.headline)
+                    .foregroundColor(.white)
                     .padding()
-                    .frame(width:350, height:40)
-                    .background(Color.PulpeAngel)
-                    .cornerRadius(35.0)
-            }.padding()
+                    
+                    .frame(width:350, height: 40)
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient:Gradient(colors:[.white,Color("PulpeAngel")]),startPoint:.top,endPoint: .bottom))
+                    .cornerRadius(10.0)
+             }.padding(.bottom,10)
             Button(action:{print("Button taper")})
             {
             Text("VALIDER")
                 .font(.headline)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .padding()
-                .frame(width: 350, height: 40)
-                .background(Color.PulpeAngel)
-                .cornerRadius(35.0)
+                
+                .frame(width:350, height: 40)
+                .foregroundColor(.white)
+                .background(LinearGradient(gradient:Gradient(colors:[.white,Color("PulpeAngel")]),startPoint:.top,endPoint: .bottom))
+                .cornerRadius(10.0)
         }
     }
-    .padding()
+        .padding()
+        .frame(height: 4.0)
 }
     
 
@@ -113,7 +131,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-}
+
 
 struct ExtractedView: View {
     var body: some View {
@@ -123,4 +141,5 @@ struct ExtractedView: View {
             .foregroundColor(.PulpeAngel)
             .padding(.bottom,20)
     }
+}
 }
