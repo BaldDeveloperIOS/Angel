@@ -1,23 +1,33 @@
 //
 //  AppDelegate.swift
-//  Angel
+//  TestAngel
 //
-//  Created by chauveau on 07/05/2020.
-//  Copyright © 2020 chauveau. All rights reserved.
+//  Created by helenepetitjean on 07/05/2020.
+//  Copyright © 2020 helenepetitjean. All rights reserved.
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().delegate = self
         return true
     }
-
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.actionIdentifier == "open"{
+            
+        NotificationCenter.default.post(name: NSNotification.Name("DetailTab"), object: nil)
+        }
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
