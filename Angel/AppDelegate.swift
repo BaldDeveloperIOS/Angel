@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UserNotifications
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -20,13 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UNUserNotificationCenter.current().delegate = self
         return true
     }
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        if response.actionIdentifier == "open"{
-            
-        NotificationCenter.default.post(name: NSNotification.Name("DetailTab"), object: nil)
-        }
-    }
+
     
     // MARK: UISceneSession Lifecycle
 
