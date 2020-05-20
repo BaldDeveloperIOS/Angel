@@ -11,11 +11,10 @@ import SwiftUI
 struct ContentView: View {  
     var body: some View {
         VStack {
-            Text("Ici c'est la map")
+            Text("On repart à zero les gars")
         }
     }
-        .padding()
-        .frame(height: 4.0)
+      
 }
     
 
@@ -26,13 +25,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-struct ExtractedView: View {
-    var body: some View {
-        Text("Mon profil")
-            .font(.largeTitle)
-            .fontWeight(.semibold)
-            .foregroundColor(.PulpeAngel)
-            .padding(.bottom,20)
-    }
-}
-}
+
