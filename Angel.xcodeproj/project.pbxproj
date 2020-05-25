@@ -15,6 +15,9 @@
 		116248B5246429490091ABF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116248B3246429490091ABF5 /* LaunchScreen.storyboard */; };
 		4B25386C24695ABD00C1F2DA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25386B24695ABD00C1F2DA /* Color.swift */; };
 		4B34A927247C86E300880293 /* EmptyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A926247C86E300880293 /* EmptyProfil.swift */; };
+		4B34A92B247C881200880293 /* Inscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A92A247C881200880293 /* Inscription.swift */; };
+		4B34A92D247C881C00880293 /* Connexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A92C247C881C00880293 /* Connexion.swift */; };
+		4B34A92F247C882F00880293 /* EmptyKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A92E247C882F00880293 /* EmptyKeeper.swift */; };
 		4BB03CD7247569C80019C9C3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CD6247569C80019C9C3 /* Helper.swift */; };
 		4BB03CD9247569D60019C9C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CD8247569D60019C9C3 /* Extensions.swift */; };
 		4BB03CDB247569E80019C9C3 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CDA247569E80019C9C3 /* RecordingDataModel.swift */; };
@@ -46,6 +49,9 @@
 		116248B6246429490091ABF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B25386B24695ABD00C1F2DA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4B34A926247C86E300880293 /* EmptyProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProfil.swift; sourceTree = "<group>"; };
+		4B34A92A247C881200880293 /* Inscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inscription.swift; sourceTree = "<group>"; };
+		4B34A92C247C881C00880293 /* Connexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connexion.swift; sourceTree = "<group>"; };
+		4B34A92E247C882F00880293 /* EmptyKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyKeeper.swift; sourceTree = "<group>"; };
 		4BB03CD6247569C80019C9C3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4BB03CD8247569D60019C9C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4BB03CDA247569E80019C9C3 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 		116248A7246429480091ABF5 /* Angel */ = {
 			isa = PBXGroup;
 			children = (
+				4B34A929247C87D900880293 /* User */,
 				116248AA246429480091ABF5 /* SceneDelegate.swift */,
 				116248A8246429480091ABF5 /* AppDelegate.swift */,
 				116248AC246429480091ABF5 /* ContentView.swift */,
@@ -117,6 +124,17 @@
 				116248B1246429490091ABF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B34A929247C87D900880293 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				4B34A926247C86E300880293 /* EmptyProfil.swift */,
+				4B34A92A247C881200880293 /* Inscription.swift */,
+				4B34A92C247C881C00880293 /* Connexion.swift */,
+				4B34A92E247C882F00880293 /* EmptyKeeper.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		4BB03CD3247569400019C9C3 /* Model */ = {
@@ -162,7 +180,6 @@
 				4BB03CF724756CCB0019C9C3 /* RecordingsList.swift */,
 				4BB03CF924756CF60019C9C3 /* RecordingView.swift */,
 				4BB03CFB24756D510019C9C3 /* PulsatingView.swift */,
-				4B34A926247C86E300880293 /* EmptyProfil.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -244,17 +261,20 @@
 				116248A9246429480091ABF5 /* AppDelegate.swift in Sources */,
 				4BB03CD9247569D60019C9C3 /* Extensions.swift in Sources */,
 				4BB03CF224756C110019C9C3 /* Map.swift in Sources */,
+				4B34A92B247C881200880293 /* Inscription.swift in Sources */,
 				4BB03CF624756CAC0019C9C3 /* AlertActiveView.swift in Sources */,
 				4BB03CDB247569E80019C9C3 /* RecordingDataModel.swift in Sources */,
 				4BB03CF824756CCB0019C9C3 /* RecordingsList.swift in Sources */,
 				4BB03CE124756AC00019C9C3 /* ButtonAlert.swift in Sources */,
 				4BB03CDD24756A5F0019C9C3 /* AudioPlayer.swift in Sources */,
+				4B34A92D247C881C00880293 /* Connexion.swift in Sources */,
 				116248AB246429480091ABF5 /* SceneDelegate.swift in Sources */,
 				4BB03CE724756AE00019C9C3 /* ButtonTest.swift in Sources */,
 				4BB03CF024756BE80019C9C3 /* Profile.swift in Sources */,
 				4BB03CF424756C400019C9C3 /* AlertView.swift in Sources */,
 				4BB03CEE24756BC10019C9C3 /* TabBar.swift in Sources */,
 				4BB03CEB24756B2E0019C9C3 /* ButtonStop.swift in Sources */,
+				4B34A92F247C882F00880293 /* EmptyKeeper.swift in Sources */,
 				4B34A927247C86E300880293 /* EmptyProfil.swift in Sources */,
 				4BB03CD7247569C80019C9C3 /* Helper.swift in Sources */,
 				4BB03CFA24756CF60019C9C3 /* RecordingView.swift in Sources */,
