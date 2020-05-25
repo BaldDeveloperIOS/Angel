@@ -1,104 +1,90 @@
 //
 //  Map.swift
-//  Angel
+//  Tests
 //
-//  Created by helenepetitjean on 20/05/2020.
-//  Copyright © 2020 chauveau. All rights reserved.
+//  Created by helenepetitjean on 23/05/2020.
+//  Copyright © 2020 helenepetitjean. All rights reserved.
 //
 
 import SwiftUI
-import MapKit
 
 struct Map: View {
+    @State var selectedRefugeAnnotation: RefugeAnnotation?
+    @State var isActive: Bool = false
     
-    @State var manager = CLLocationManager()
-    @State var alert = false
+    let refuges: [RefugeAnnotation] = [
+        Refuge(name: "Le Vertigo", adresse: "Plage des catalans Marseille", horaires: "22h - 5h", isOpen: true, type: .nightClub, latitude: 43.289884, longitude: 5.360595),
+        Refuge(name: "Obrady's", adresse: "378 Avenue de Mazargues, 13008 Marseille", horaires: "10h - 2h", isOpen: true, type: .bar, latitude: 43.258803, longitude: 5.3941183),
+        Refuge(name: "La vieille pelle", adresse: "37 Avenue Saint-Jean, 13002 Marseille", horaires: "19h - Minuit", isOpen: true, type: .restauration, latitude: 43.287947, longitude: 5.362256),
+        Refuge(name: "Le Trolley Bus", adresse: "24 Quai de Rive Neuve, 13007 Marseille", horaires: "22h - 5h", isOpen: true, type: .nightClub, latitude: 43.300754, longitude: 5.363086),
         
-        var body: some View {
-            VStack{
-                 MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
-                        
-                        Alert(title: Text("Please Enable Location Access In Settings Pannel !!!"))
-                        
-                    }
-            }.edgesIgnoringSafeArea(.top)
-          
-            }
-       
+        Refuge(name: "VIP Room", adresse: " 40 Rue Saint-Pierre, 13005 Marseille", horaires: "22h - 5h", isOpen: true, type: .nightClub, latitude: 43.296069, longitude: 5.379709),
+        Refuge(name: "Le BlackStone", adresse: "10 Boulevard Gustave Ganay, 13009 Marseille", horaires: "10h - 2h", isOpen: true, type: .bar,latitude: 43.289759, longitude: 5.38217),
+        Refuge(name: "Chez Quan", adresse: "148 Avenue Pierre Mendès France, 13008 Marseille", horaires: "19h - Minuit", isOpen: true, type: .restauration, latitude: 43.28776, longitude: 5.374331),
+        Refuge(name: "Le Bazar", adresse: " 90 Boulevard Rabatau, 13008 Marseille", horaires: "22h - 5h", isOpen: true, type: .nightClub, latitude: 43.298973, longitude: 5.378508),
+        
+        Refuge(name: "La Joïa", adresse: "935 Route de l'Enfant, 13290 Aix-en-Provence", horaires: "22h - 5h", isOpen: true, type: .nightClub, latitude: 43.295819, longitude: 5.379739),
+        Refuge(name: "Le 20 000 lieues", adresse: " 12 Boulevard Alexandre Delabre, 13008 Marseille", horaires: "10h - 2h", isOpen: true, type: .bar, latitude: 43.292976, longitude: 5.385561),
+        Refuge(name: "La table de l'ours", adresse: "17 Route de la Valentine, 13011 Marseille", horaires: "19h - Minuit", isOpen: true, type: .restauration,latitude: 43.288291, longitude: 5.388122),
+        Refuge(name: "El Santo Cachon", adresse: "40 Rue Ferrari, 13005 Marseille", horaires: "22h - 5h", isOpen: true, type: .restauration, latitude: 43.304782, longitude: 5.375663),
+        
+        Refuge(name: "L'Exit", adresse: "12 Quai de Rive Neuve, 13007 Marseille", horaires: "22h - 5h", isOpen: true, type: .nightClub,latitude: 43.310216, longitude: 5.366722),
+        Refuge(name: "Shamrock", adresse: "16 Quai de Rive Neuve, 13007 Marseill", horaires: "10h - 2h", isOpen: true, type: .bar, latitude: 43.303283, longitude: 5.373131),
+        Refuge(name: "Ko-Ishi", adresse: "25 Rue Sainte, 13001 Marseille", horaires: "19h - Minuit", isOpen: true, type: .restauration, latitude: 43.294538, longitude: 5.354993),
+        Refuge(name: "Hard Rock Café", adresse: "35 Cours Honoré d'Estienne d'Orves, 13001 Marseille", horaires: "22h - 5h", isOpen: true, type: .bar, latitude: 43.277794, longitude: 5.363891),].map { (refuge) -> RefugeAnnotation in
+            RefugeAnnotation(refuge: refuge)
     }
-
-struct Map_Previews: PreviewProvider {
-    static var previews: some View {
-        Map()
+    
+    var body: some View {
+        MapView(selectedRefugeAnnotation: $selectedRefugeAnnotation, isActive: $isActive, annotations: refuges)
+            //  .navigationBarTitle("Carte", displayMode: .inline)
+            .edgesIgnoringSafeArea(.all)
+            .sheet(item: $selectedRefugeAnnotation, onDismiss: {
+                print("On dismiss")
+            }) {
+                refugeAnnotation in
+                VStack{
+                    Text(refugeAnnotation.title ?? "Pas de refuge")
+                        .foregroundColor(Color.purpleAngel)
+                        .font(.largeTitle)
+                        .padding(.top)
+                    Text(refugeAnnotation.subtitle ?? "Pas d'adresse")
+                        .foregroundColor(Color.gray)
+                        .font(.headline)
+                    Text(refugeAnnotation.horaires ?? "Pas d'adresse")
+                        .font(.headline)
+                        .foregroundColor(Color.gray)
+                    Map()
+                        .frame(height: 300)
+                    Text("Montrez notre logo à l'entrée de  l'etablissement ou dites leur ANGEL pour vous mettre à l'abri.")
+                        .padding()
+                        .foregroundColor(Color.gray)
+                        .font(.headline)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(4)
+                    Image("Logo")
+                        .resizable()
+                        .frame(width:150, height:150)
+                }
+        }
     }
 }
-
-struct MapView : UIViewRepresentable {
-    
-    @Binding var manager : CLLocationManager
-    @Binding var alert : Bool
-    let map = MKMapView()
-    
-    func makeCoordinator() -> MapView.Coordinator {
-        return Coordinator(parent1: self)
-    }
-    
-    func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
+    struct RefugeAnnotationView: View {
+        @Binding var selectedRefugeAnnotation: RefugeAnnotation?
         
-        
-        let center = CLLocationCoordinate2D(latitude: 43.3060333, longitude: 5.3975022)
-        let region = MKCoordinateRegion(center: center, latitudinalMeters: 1000, longitudinalMeters: 1000)
-        map.region = region
-        manager.requestWhenInUseAuthorization()
-        manager.delegate = context.coordinator
-        manager.startUpdatingLocation()
-        return map
-    }
-    func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
-        
-    }
-    
-    class Coordinator : NSObject,CLLocationManagerDelegate{
-        
-        var parent : MapView
-        
-        init(parent1 : MapView) {
-            
-            parent = parent1
-        }
-        
-        func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-            
-            if status == .denied{
-                
-                parent.alert.toggle()
-            }
-        }
-        
-        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            
-            let location = locations.last
-            let point = MKPointAnnotation()
-            
-            let georeader = CLGeocoder()
-            georeader.reverseGeocodeLocation(location!) { (places, err) in
-                
-                if err != nil{
-                    
-                    print((err?.localizedDescription)!)
-                    return
-                }
-                
-                let place = places?.first?.locality
-                point.title = place
-                point.subtitle = "Current"
-                point.coordinate = location!.coordinate
-                self.parent.map.removeAnnotations(self.parent.map.annotations)
-                self.parent.map.addAnnotation(point)
-                
-                let region = MKCoordinateRegion(center: location!.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-                self.parent.map.region = region
+        var body: some View {
+            VStack {
+                Text(selectedRefugeAnnotation?.title ?? "Pas de refuge")
+                    .font(.largeTitle)
+                Text(selectedRefugeAnnotation?.subtitle ?? "Pas d'adresse")
+                    .font(.headline)
+                    .foregroundColor(.red)
             }
         }
     }
+    
+    struct Map_Previews: PreviewProvider {
+        static var previews: some View {
+            Map()
+        }
 }

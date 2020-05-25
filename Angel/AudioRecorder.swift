@@ -1,9 +1,9 @@
 //
 //  AudioRecorder.swift
-//  Angel
+//  Tests
 //
-//  Created by helenepetitjean on 20/05/2020.
-//  Copyright © 2020 chauveau. All rights reserved.
+//  Created by helenepetitjean on 13/05/2020.
+//  Copyright © 2020 helenepetitjean. All rights reserved.
 //
 
 import Foundation
@@ -98,4 +98,3 @@ class AudioRecorder: NSObject,ObservableObject {
     }
     
 }
-

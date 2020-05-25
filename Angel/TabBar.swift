@@ -1,9 +1,9 @@
 //
 //  TabBar.swift
-//  Angel
+//  Tests
 //
-//  Created by helenepetitjean on 20/05/2020.
-//  Copyright © 2020 chauveau. All rights reserved.
+//  Created by helenepetitjean on 10/05/2020.
+//  Copyright © 2020 helenepetitjean. All rights reserved.
 //
 
 import SwiftUI
@@ -11,16 +11,14 @@ import SwiftUI
 struct TabBar: View {
     @State var show = false
     var body: some View {
-        NavigationView{
+       NavigationView{
             ZStack (alignment: .bottom){
-                BottomBar()
-               
+                CircleTabView()
                 ButtonAngel(audioRecorder: AudioRecorder())
-            
             }
         }
-        }
     }
+}
 
 
 struct TabBar_Previews: PreviewProvider {
@@ -28,34 +26,86 @@ struct TabBar_Previews: PreviewProvider {
         TabBar()
     }
 }
-
-
-struct BottomBar : View {
-    var body : some View {
-        TabView  {
+struct CircleTabView : View {
+    
+    @State var index = 0
+    
+    var body: some View {
+        
+        VStack{
             
-            Profile()
-                .tabItem  {
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.title)
-                    Text("Profil")
+            ZStack{
+                if self.index == 0{
+                        Profile().navigationBarTitle("Profil", displayMode: .inline)
+                }
+                else{
+                        Map()   .navigationBarTitle("Carte", displayMode: .inline)
+                }
             }
-            ContentView()
-                .tabItem {
-                    Text("")
-                    
-            }
+            CircleTab(index: self.$index)
             
-            Map()
-                .tabItem {
-                    Image(systemName: "map")
-                        .font(.title)
-                    Text("Carte")
-            }
-        }.accentColor(Color.purpleAngel)
+        }
+        
     }
 }
 
-
-
-
+struct CircleTab : View {
+    
+    @Binding var index : Int
+    
+    var body : some View{
+        
+        
+        HStack (spacing:190) {
+            
+            Button(action: {
+                self.index = 0
+            }) {
+                VStack{
+                    if self.index != 0{
+                        VStack{
+                            Image(systemName: "person.crop.circle.fill")
+                               .font(.title)
+                            Text("Profil")
+                        }.foregroundColor(Color.gray)
+                    }else{
+                        VStack{
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.title)
+                            Text("Profil")
+                        }.foregroundColor(Color.purpleAngel)
+                    }
+                }
+            }
+            Button(action: {
+                
+                self.index = 2
+                
+            }) {
+                
+                VStack{
+                    
+                    if self.index != 2{
+                        
+                        VStack{
+                            Image(systemName: "map")
+                               .font(.title)
+                            Text("Carte")
+                        }.foregroundColor(Color.gray)
+                    }
+                    else{
+                        
+                        VStack{
+                            Image(systemName: "map")
+                               .font(.title)
+                            Text("Carte")
+                        }.foregroundColor(Color.purpleAngel)
+                        
+                    }
+                }
+            }
+        }.padding([.top, .leading, .trailing])
+            .background(Color.white)
+            .animation(.spring())
+    }
+}

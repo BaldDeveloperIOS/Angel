@@ -1,25 +1,23 @@
 //
-//  AlertView.swift
+//  ButtonStop.swift
 //  Tests
 //
-//  Created by helenepetitjean on 10/05/2020.
+//  Created by helenepetitjean on 13/05/2020.
 //  Copyright © 2020 helenepetitjean. All rights reserved.
 //
 
 import SwiftUI
 
-struct AlertView: View {
+struct ButtonStop: View {
     @ObservedObject var audioRecorder: AudioRecorder
     @State var showView = false
-    @State var animate = true
-   
+    
     var body: some View {
-        ZStack{
-          
-            ButtonPulsatingChangeView()
+        VStack{
+            //Bouton stop
             Button(action: {
                 self.audioRecorder.stopRecording()
-                print("*** record stop ***")
+                print("*** record start ***")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.showView = true
                 }
@@ -33,14 +31,15 @@ struct AlertView: View {
             }
             //MARK: - NAVIGATION LINKS
             NavigationLink(destination: AlertActiveView(), isActive: $showView) {
-                EmptyView()
+                EmptyView().hidden()
             }
-        }.navigationBarTitle("Alerte en cours",displayMode: .inline)
+            //Fin Bouton stop
+        }
     }
 }
 
-struct AlertView_Previews: PreviewProvider {
+struct ButtonStop_Previews: PreviewProvider {
     static var previews: some View {
-        AlertView(audioRecorder: AudioRecorder())
+        ButtonStop(audioRecorder: AudioRecorder())
     }
 }
