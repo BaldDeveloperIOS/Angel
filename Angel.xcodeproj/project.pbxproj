@@ -14,6 +14,7 @@
 		116248B2246429490091ABF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116248B1246429490091ABF5 /* Preview Assets.xcassets */; };
 		116248B5246429490091ABF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116248B3246429490091ABF5 /* LaunchScreen.storyboard */; };
 		4B25386C24695ABD00C1F2DA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25386B24695ABD00C1F2DA /* Color.swift */; };
+		4B34A927247C86E300880293 /* EmptyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A926247C86E300880293 /* EmptyProfil.swift */; };
 		4BB03CD7247569C80019C9C3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CD6247569C80019C9C3 /* Helper.swift */; };
 		4BB03CD9247569D60019C9C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CD8247569D60019C9C3 /* Extensions.swift */; };
 		4BB03CDB247569E80019C9C3 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB03CDA247569E80019C9C3 /* RecordingDataModel.swift */; };
@@ -44,6 +45,7 @@
 		116248B4246429490091ABF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116248B6246429490091ABF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B25386B24695ABD00C1F2DA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4B34A926247C86E300880293 /* EmptyProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProfil.swift; sourceTree = "<group>"; };
 		4BB03CD6247569C80019C9C3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4BB03CD8247569D60019C9C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4BB03CDA247569E80019C9C3 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				4BB03CF724756CCB0019C9C3 /* RecordingsList.swift */,
 				4BB03CF924756CF60019C9C3 /* RecordingView.swift */,
 				4BB03CFB24756D510019C9C3 /* PulsatingView.swift */,
+				4B34A926247C86E300880293 /* EmptyProfil.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				4BB03CF424756C400019C9C3 /* AlertView.swift in Sources */,
 				4BB03CEE24756BC10019C9C3 /* TabBar.swift in Sources */,
 				4BB03CEB24756B2E0019C9C3 /* ButtonStop.swift in Sources */,
+				4B34A927247C86E300880293 /* EmptyProfil.swift in Sources */,
 				4BB03CD7247569C80019C9C3 /* Helper.swift in Sources */,
 				4BB03CFA24756CF60019C9C3 /* RecordingView.swift in Sources */,
 				4B25386C24695ABD00C1F2DA /* Color.swift in Sources */,
