@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "DB4928E0-E7AB-4AA5-BDE4-7F0BAE53A394.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "Angel-8-10.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
