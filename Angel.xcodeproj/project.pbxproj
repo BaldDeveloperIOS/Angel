@@ -10,47 +10,9 @@
 		116248AF246429490091ABF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116248AE246429490091ABF5 /* Assets.xcassets */; };
 		116248B2246429490091ABF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116248B1246429490091ABF5 /* Preview Assets.xcassets */; };
 		116248B5246429490091ABF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116248B3246429490091ABF5 /* LaunchScreen.storyboard */; };
-		4B34A9B2247C8D6A00880293 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A98A247C8D6800880293 /* Extensions.swift */; };
-		4B34A9B3247C8D6A00880293 /* ButtonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A98B247C8D6800880293 /* ButtonAlert.swift */; };
-		4B34A9B4247C8D6A00880293 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4B34A98C247C8D6800880293 /* Location.gpx */; };
-		4B34A9B5247C8D6A00880293 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A98D247C8D6800880293 /* ViewRouter.swift */; };
-		4B34A9B6247C8D6A00880293 /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A98E247C8D6800880293 /* ButtonTest.swift */; };
-		4B34A9B7247C8D6A00880293 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A98F247C8D6800880293 /* AudioPlayer.swift */; };
-		4B34A9B8247C8D6A00880293 /* OnBoardingSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A990247C8D6800880293 /* OnBoardingSubview.swift */; };
-		4B34A9B9247C8D6A00880293 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A991247C8D6800880293 /* Color.swift */; };
 		4B34A9BA247C8D6A00880293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A992247C8D6800880293 /* AppDelegate.swift */; };
-		4B34A9BB247C8D6A00880293 /* RecordingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A993247C8D6800880293 /* RecordingList.swift */; };
-		4B34A9BC247C8D6A00880293 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A994247C8D6800880293 /* Map.swift */; };
-		4B34A9BD247C8D6A00880293 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A995247C8D6800880293 /* RecordingView.swift */; };
-		4B34A9BE247C8D6A00880293 /* EmergencyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A996247C8D6800880293 /* EmergencyProfil.swift */; };
-		4B34A9BF247C8D6A00880293 /* ButtonsProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A997247C8D6800880293 /* ButtonsProfile.swift */; };
-		4B34A9C0247C8D6A00880293 /* Refuge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A998247C8D6800880293 /* Refuge.swift */; };
-		4B34A9C1247C8D6A00880293 /* RefugeAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A999247C8D6800880293 /* RefugeAnnotations.swift */; };
-		4B34A9C2247C8D6A00880293 /* ButtonStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99A247C8D6900880293 /* ButtonStop.swift */; };
-		4B34A9C3247C8D6A00880293 /* EmptyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99B247C8D6900880293 /* EmptyProfil.swift */; };
-		4B34A9C4247C8D6A00880293 /* Inscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99C247C8D6900880293 /* Inscription.swift */; };
-		4B34A9C5247C8D6A00880293 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99D247C8D6900880293 /* AudioRecorder.swift */; };
-		4B34A9C6247C8D6A00880293 /* Connexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99E247C8D6900880293 /* Connexion.swift */; };
-		4B34A9C7247C8D6A00880293 /* ButtonAngel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A99F247C8D6900880293 /* ButtonAngel.swift */; };
-		4B34A9C8247C8D6A00880293 /* AlertActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A0247C8D6900880293 /* AlertActiveView.swift */; };
-		4B34A9C9247C8D6A00880293 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A1247C8D6900880293 /* AlertView.swift */; };
-		4B34A9CA247C8D6A00880293 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A2247C8D6900880293 /* MapView.swift */; };
-		4B34A9CB247C8D6A00880293 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A3247C8D6900880293 /* RecordingDataModel.swift */; };
-		4B34A9CC247C8D6A00880293 /* OnBoardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A4247C8D6900880293 /* OnBoardingPageControl.swift */; };
-		4B34A9CD247C8D6A00880293 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A5247C8D6900880293 /* UserProfile.swift */; };
-		4B34A9CE247C8D6A00880293 /* ButtonOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A6247C8D6900880293 /* ButtonOnBoarding.swift */; };
-		4B34A9CF247C8D6A00880293 /* PulsatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A7247C8D6900880293 /* PulsatingViewModel.swift */; };
-		4B34A9D0247C8D6A00880293 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A8247C8D6900880293 /* Profile.swift */; };
-		4B34A9D1247C8D6A00880293 /* BraceletProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9A9247C8D6900880293 /* BraceletProfile.swift */; };
-		4B34A9D2247C8D6A00880293 /* KeeperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AA247C8D6900880293 /* KeeperView.swift */; };
-		4B34A9D3247C8D6A00880293 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AB247C8D6900880293 /* TabBar.swift */; };
-		4B34A9D4247C8D6A00880293 /* EmptyKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AC247C8D6900880293 /* EmptyKeeper.swift */; };
-		4B34A9D5247C8D6A00880293 /* KeeperProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AD247C8D6900880293 /* KeeperProfile.swift */; };
-		4B34A9D6247C8D6A00880293 /* ButtonUrgence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AE247C8D6900880293 /* ButtonUrgence.swift */; };
-		4B34A9D7247C8D6A00880293 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9AF247C8D6900880293 /* Helper.swift */; };
-		4B34A9D8247C8D6A00880293 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9B0247C8D6900880293 /* OnBoardingPageViewController.swift */; };
-		4B34A9D9247C8D6A00880293 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9B1247C8D6900880293 /* OnBoardingView.swift */; };
 		4B34A9DB247C8E1200880293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9DA247C8E1200880293 /* ContentView.swift */; };
+		4B34A9E9247C915100880293 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34A9E8247C915100880293 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,47 +21,9 @@
 		116248B1246429490091ABF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		116248B4246429490091ABF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116248B6246429490091ABF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B34A98A247C8D6800880293 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../../Desktop/dossier sans titre/Extensions.swift"; sourceTree = "<group>"; };
-		4B34A98B247C8D6800880293 /* ButtonAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonAlert.swift; path = "../../../Desktop/dossier sans titre/ButtonAlert.swift"; sourceTree = "<group>"; };
-		4B34A98C247C8D6800880293 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Location.gpx; path = "../../../Desktop/dossier sans titre/Location.gpx"; sourceTree = "<group>"; };
-		4B34A98D247C8D6800880293 /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = "../../../Desktop/dossier sans titre/ViewRouter.swift"; sourceTree = "<group>"; };
-		4B34A98E247C8D6800880293 /* ButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonTest.swift; path = "../../../Desktop/dossier sans titre/ButtonTest.swift"; sourceTree = "<group>"; };
-		4B34A98F247C8D6800880293 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioPlayer.swift; path = "../../../Desktop/dossier sans titre/AudioPlayer.swift"; sourceTree = "<group>"; };
-		4B34A990247C8D6800880293 /* OnBoardingSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingSubview.swift; path = "../../../Desktop/dossier sans titre/OnBoardingSubview.swift"; sourceTree = "<group>"; };
-		4B34A991247C8D6800880293 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "../../../Desktop/dossier sans titre/Color.swift"; sourceTree = "<group>"; };
 		4B34A992247C8D6800880293 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Desktop/dossier sans titre/AppDelegate.swift"; sourceTree = "<group>"; };
-		4B34A993247C8D6800880293 /* RecordingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingList.swift; path = "../../../Desktop/dossier sans titre/RecordingList.swift"; sourceTree = "<group>"; };
-		4B34A994247C8D6800880293 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = "../../../Desktop/dossier sans titre/Map.swift"; sourceTree = "<group>"; };
-		4B34A995247C8D6800880293 /* RecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingView.swift; path = "../../../Desktop/dossier sans titre/RecordingView.swift"; sourceTree = "<group>"; };
-		4B34A996247C8D6800880293 /* EmergencyProfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyProfil.swift; path = "../../../Desktop/dossier sans titre/EmergencyProfil.swift"; sourceTree = "<group>"; };
-		4B34A997247C8D6800880293 /* ButtonsProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonsProfile.swift; path = "../../../Desktop/dossier sans titre/ButtonsProfile.swift"; sourceTree = "<group>"; };
-		4B34A998247C8D6800880293 /* Refuge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Refuge.swift; path = "../../../Desktop/dossier sans titre/Refuge.swift"; sourceTree = "<group>"; };
-		4B34A999247C8D6800880293 /* RefugeAnnotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RefugeAnnotations.swift; path = "../../../Desktop/dossier sans titre/RefugeAnnotations.swift"; sourceTree = "<group>"; };
-		4B34A99A247C8D6900880293 /* ButtonStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonStop.swift; path = "../../../Desktop/dossier sans titre/ButtonStop.swift"; sourceTree = "<group>"; };
-		4B34A99B247C8D6900880293 /* EmptyProfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyProfil.swift; path = "../../../Desktop/dossier sans titre/EmptyProfil.swift"; sourceTree = "<group>"; };
-		4B34A99C247C8D6900880293 /* Inscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inscription.swift; path = "../../../Desktop/dossier sans titre/Inscription.swift"; sourceTree = "<group>"; };
-		4B34A99D247C8D6900880293 /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioRecorder.swift; path = "../../../Desktop/dossier sans titre/AudioRecorder.swift"; sourceTree = "<group>"; };
-		4B34A99E247C8D6900880293 /* Connexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connexion.swift; path = "../../../Desktop/dossier sans titre/Connexion.swift"; sourceTree = "<group>"; };
-		4B34A99F247C8D6900880293 /* ButtonAngel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonAngel.swift; path = "../../../Desktop/dossier sans titre/ButtonAngel.swift"; sourceTree = "<group>"; };
-		4B34A9A0247C8D6900880293 /* AlertActiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertActiveView.swift; path = "../../../Desktop/dossier sans titre/AlertActiveView.swift"; sourceTree = "<group>"; };
-		4B34A9A1247C8D6900880293 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = "../../../Desktop/dossier sans titre/AlertView.swift"; sourceTree = "<group>"; };
-		4B34A9A2247C8D6900880293 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = "../../../Desktop/dossier sans titre/MapView.swift"; sourceTree = "<group>"; };
-		4B34A9A3247C8D6900880293 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingDataModel.swift; path = "../../../Desktop/dossier sans titre/RecordingDataModel.swift"; sourceTree = "<group>"; };
-		4B34A9A4247C8D6900880293 /* OnBoardingPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingPageControl.swift; path = "../../../Desktop/dossier sans titre/OnBoardingPageControl.swift"; sourceTree = "<group>"; };
-		4B34A9A5247C8D6900880293 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = "../../../Desktop/dossier sans titre/UserProfile.swift"; sourceTree = "<group>"; };
-		4B34A9A6247C8D6900880293 /* ButtonOnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonOnBoarding.swift; path = "../../../Desktop/dossier sans titre/ButtonOnBoarding.swift"; sourceTree = "<group>"; };
-		4B34A9A7247C8D6900880293 /* PulsatingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PulsatingViewModel.swift; path = "../../../Desktop/dossier sans titre/PulsatingViewModel.swift"; sourceTree = "<group>"; };
-		4B34A9A8247C8D6900880293 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = "../../../Desktop/dossier sans titre/Profile.swift"; sourceTree = "<group>"; };
-		4B34A9A9247C8D6900880293 /* BraceletProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BraceletProfile.swift; path = "../../../Desktop/dossier sans titre/BraceletProfile.swift"; sourceTree = "<group>"; };
-		4B34A9AA247C8D6900880293 /* KeeperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeeperView.swift; path = "../../../Desktop/dossier sans titre/KeeperView.swift"; sourceTree = "<group>"; };
-		4B34A9AB247C8D6900880293 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = "../../../Desktop/dossier sans titre/TabBar.swift"; sourceTree = "<group>"; };
-		4B34A9AC247C8D6900880293 /* EmptyKeeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyKeeper.swift; path = "../../../Desktop/dossier sans titre/EmptyKeeper.swift"; sourceTree = "<group>"; };
-		4B34A9AD247C8D6900880293 /* KeeperProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeeperProfile.swift; path = "../../../Desktop/dossier sans titre/KeeperProfile.swift"; sourceTree = "<group>"; };
-		4B34A9AE247C8D6900880293 /* ButtonUrgence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonUrgence.swift; path = "../../../Desktop/dossier sans titre/ButtonUrgence.swift"; sourceTree = "<group>"; };
-		4B34A9AF247C8D6900880293 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = "../../../Desktop/dossier sans titre/Helper.swift"; sourceTree = "<group>"; };
-		4B34A9B0247C8D6900880293 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingPageViewController.swift; path = "../../../Desktop/dossier sans titre/OnBoardingPageViewController.swift"; sourceTree = "<group>"; };
-		4B34A9B1247C8D6900880293 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingView.swift; path = "../../../Desktop/dossier sans titre/OnBoardingView.swift"; sourceTree = "<group>"; };
 		4B34A9DA247C8E1200880293 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Desktop/dossier sans titre/ContentView.swift"; sourceTree = "<group>"; };
+		4B34A9E8247C915100880293 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../Desktop/dossier sans titre/SceneDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,48 +56,10 @@
 		116248A7246429480091ABF5 /* Angel */ = {
 			isa = PBXGroup;
 			children = (
-				4B34A9A0247C8D6900880293 /* AlertActiveView.swift */,
-				4B34A9A1247C8D6900880293 /* AlertView.swift */,
-				4B34A992247C8D6800880293 /* AppDelegate.swift */,
-				4B34A98F247C8D6800880293 /* AudioPlayer.swift */,
-				4B34A99D247C8D6900880293 /* AudioRecorder.swift */,
-				4B34A9A9247C8D6900880293 /* BraceletProfile.swift */,
-				4B34A98B247C8D6800880293 /* ButtonAlert.swift */,
-				4B34A99F247C8D6900880293 /* ButtonAngel.swift */,
-				4B34A9A6247C8D6900880293 /* ButtonOnBoarding.swift */,
-				4B34A997247C8D6800880293 /* ButtonsProfile.swift */,
-				4B34A99A247C8D6900880293 /* ButtonStop.swift */,
-				4B34A98E247C8D6800880293 /* ButtonTest.swift */,
-				4B34A9AE247C8D6900880293 /* ButtonUrgence.swift */,
-				4B34A991247C8D6800880293 /* Color.swift */,
-				4B34A99E247C8D6900880293 /* Connexion.swift */,
-				4B34A9DA247C8E1200880293 /* ContentView.swift */,
-				4B34A996247C8D6800880293 /* EmergencyProfil.swift */,
-				4B34A9AC247C8D6900880293 /* EmptyKeeper.swift */,
-				4B34A99B247C8D6900880293 /* EmptyProfil.swift */,
-				4B34A98A247C8D6800880293 /* Extensions.swift */,
-				4B34A9AF247C8D6900880293 /* Helper.swift */,
-				4B34A99C247C8D6900880293 /* Inscription.swift */,
-				4B34A9AD247C8D6900880293 /* KeeperProfile.swift */,
-				4B34A9AA247C8D6900880293 /* KeeperView.swift */,
-				4B34A98C247C8D6800880293 /* Location.gpx */,
-				4B34A994247C8D6800880293 /* Map.swift */,
-				4B34A9A2247C8D6900880293 /* MapView.swift */,
-				4B34A9A4247C8D6900880293 /* OnBoardingPageControl.swift */,
-				4B34A9B0247C8D6900880293 /* OnBoardingPageViewController.swift */,
-				4B34A990247C8D6800880293 /* OnBoardingSubview.swift */,
-				4B34A9B1247C8D6900880293 /* OnBoardingView.swift */,
-				4B34A9A8247C8D6900880293 /* Profile.swift */,
-				4B34A9A7247C8D6900880293 /* PulsatingViewModel.swift */,
-				4B34A9A3247C8D6900880293 /* RecordingDataModel.swift */,
-				4B34A993247C8D6800880293 /* RecordingList.swift */,
-				4B34A995247C8D6800880293 /* RecordingView.swift */,
-				4B34A998247C8D6800880293 /* Refuge.swift */,
-				4B34A999247C8D6800880293 /* RefugeAnnotations.swift */,
-				4B34A9AB247C8D6900880293 /* TabBar.swift */,
-				4B34A9A5247C8D6900880293 /* UserProfile.swift */,
-				4B34A98D247C8D6800880293 /* ViewRouter.swift */,
 				116248AE246429490091ABF5 /* Assets.xcassets */,
+				4B34A9E8247C915100880293 /* SceneDelegate.swift */,
+				4B34A992247C8D6800880293 /* AppDelegate.swift */,
+				4B34A9DA247C8E1200880293 /* ContentView.swift */,
 				116248B3246429490091ABF5 /* LaunchScreen.storyboard */,
 				116248B6246429490091ABF5 /* Info.plist */,
 				116248B0246429490091ABF5 /* Preview Content */,
@@ -250,7 +136,6 @@
 			files = (
 				116248B5246429490091ABF5 /* LaunchScreen.storyboard in Resources */,
 				116248B2246429490091ABF5 /* Preview Assets.xcassets in Resources */,
-				4B34A9B4247C8D6A00880293 /* Location.gpx in Resources */,
 				116248AF246429490091ABF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,46 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B34A9BC247C8D6A00880293 /* Map.swift in Sources */,
-				4B34A9D0247C8D6A00880293 /* Profile.swift in Sources */,
-				4B34A9D2247C8D6A00880293 /* KeeperView.swift in Sources */,
-				4B34A9CB247C8D6A00880293 /* RecordingDataModel.swift in Sources */,
-				4B34A9CA247C8D6A00880293 /* MapView.swift in Sources */,
 				4B34A9BA247C8D6A00880293 /* AppDelegate.swift in Sources */,
-				4B34A9C7247C8D6A00880293 /* ButtonAngel.swift in Sources */,
-				4B34A9C5247C8D6A00880293 /* AudioRecorder.swift in Sources */,
-				4B34A9BF247C8D6A00880293 /* ButtonsProfile.swift in Sources */,
-				4B34A9D1247C8D6A00880293 /* BraceletProfile.swift in Sources */,
-				4B34A9B5247C8D6A00880293 /* ViewRouter.swift in Sources */,
-				4B34A9B3247C8D6A00880293 /* ButtonAlert.swift in Sources */,
-				4B34A9D9247C8D6A00880293 /* OnBoardingView.swift in Sources */,
-				4B34A9B9247C8D6A00880293 /* Color.swift in Sources */,
-				4B34A9D4247C8D6A00880293 /* EmptyKeeper.swift in Sources */,
-				4B34A9C6247C8D6A00880293 /* Connexion.swift in Sources */,
-				4B34A9C4247C8D6A00880293 /* Inscription.swift in Sources */,
-				4B34A9D5247C8D6A00880293 /* KeeperProfile.swift in Sources */,
-				4B34A9CE247C8D6A00880293 /* ButtonOnBoarding.swift in Sources */,
-				4B34A9B7247C8D6A00880293 /* AudioPlayer.swift in Sources */,
-				4B34A9C0247C8D6A00880293 /* Refuge.swift in Sources */,
-				4B34A9C3247C8D6A00880293 /* EmptyProfil.swift in Sources */,
-				4B34A9B2247C8D6A00880293 /* Extensions.swift in Sources */,
-				4B34A9D8247C8D6A00880293 /* OnBoardingPageViewController.swift in Sources */,
-				4B34A9BE247C8D6A00880293 /* EmergencyProfil.swift in Sources */,
-				4B34A9CF247C8D6A00880293 /* PulsatingViewModel.swift in Sources */,
 				4B34A9DB247C8E1200880293 /* ContentView.swift in Sources */,
-				4B34A9D7247C8D6A00880293 /* Helper.swift in Sources */,
-				4B34A9CD247C8D6A00880293 /* UserProfile.swift in Sources */,
-				4B34A9BD247C8D6A00880293 /* RecordingView.swift in Sources */,
-				4B34A9B8247C8D6A00880293 /* OnBoardingSubview.swift in Sources */,
-				4B34A9C8247C8D6A00880293 /* AlertActiveView.swift in Sources */,
-				4B34A9C9247C8D6A00880293 /* AlertView.swift in Sources */,
-				4B34A9BB247C8D6A00880293 /* RecordingList.swift in Sources */,
-				4B34A9C2247C8D6A00880293 /* ButtonStop.swift in Sources */,
-				4B34A9D6247C8D6A00880293 /* ButtonUrgence.swift in Sources */,
-				4B34A9CC247C8D6A00880293 /* OnBoardingPageControl.swift in Sources */,
-				4B34A9D3247C8D6A00880293 /* TabBar.swift in Sources */,
-				4B34A9B6247C8D6A00880293 /* ButtonTest.swift in Sources */,
-				4B34A9C1247C8D6A00880293 /* RefugeAnnotations.swift in Sources */,
+				4B34A9E9247C915100880293 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
